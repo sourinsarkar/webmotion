@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .btn {
+            color: white;
+            background-color: yellow;
+            padding: 1em;
+            border-radius: 1rem;
+            border: 5px solid #0033ff;
+        }
+
+        .btn {
+            /* transition-property: background-color;
+            transition-duration: .4s;
+            transition-timing-function: ease-in-out; */
+
+            /* transition: background-color .4s ease-in-out; */
+
+            /* transition: background-color .4s ease-in-out; */
+            transition: background-color .4s ease-in-out, color .4s ease-in-out, border-color .4s ease-in-out;
+
+            /* transition: all .4s ease-in-out; */
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            color: #151618;
+            border-color: #151618;
+        }
+    </style>
+</head>
+<body style="display: flex;">
+    <div class="btn">Open up</div>
+</body>
+</html>

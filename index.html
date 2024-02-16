@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video Basics</title>
+        <style>
+            #media video, iframe {
+                border-radius: 1rem;
+                border: 1px solid #5521db;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="media">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nO-nf74sgOw?si=sWMY5HQyNsp8uVVR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <video src="videos/video1.mp4" poster="images/video-poster-1.jpg" width="560" height="315" controls muted>Videos are not supported in this browser.</video>
+        </div>
+    </body>
+</html>
