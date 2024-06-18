@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Transitions</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .main {
+            width:500px;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <button>Click here</button>
+    <div class="main">
+        <h3>Hello</h3>
+    </div>
+
+    <script>
+        document.querySelector("button").addEventListener("click", () => {
+            const mainDiv = document.querySelector(".main");
+            mainDiv.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
